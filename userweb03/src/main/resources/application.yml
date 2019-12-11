@@ -1,0 +1,28 @@
+server:
+  port: 9003
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: userweb01
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
+
+PROVIDER01:
+  ribbon:
+    #配置指定服务的负载均衡策略
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    # Ribbon的连接超时时间
+    ConnectTimeout: 500
+    # Ribbon的数据读取超时时间
+    ReadTimeout: 500
+    # 是否对所有操作都进行重试
+    OkToRetryOnAllOperations: true
+    # 切换实例的重试次数
+    MaxAutoRetriesNextServer: 1
+    # 对当前实例的重试次数
+    MaxAutoRetries: 1
+
+  logging.level.com.offcn: debug

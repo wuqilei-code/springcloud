@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configserver001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrixdashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrixdashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider01/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/provider02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider02/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service2/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/userweb01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userweb02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userweb03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userweb04" charset="UTF-8" />
+  </component>
+</project>

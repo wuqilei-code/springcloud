@@ -1,0 +1,36 @@
+server:
+  port: 9004
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: userweb01
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
+PROVIDER01:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+   # Ribbon的连接超时时间
+    ConnectTimeout: 500
+    # Ribbon的数据读取超时时间
+    ReadTimeout: 500
+    # 是否对所有操作都进行重试
+    OkToRetryOnAllOperations: true
+    # 切换实例的重试次数
+    MaxAutoRetriesNextServer: 1
+    # 对当前实例的重试次数
+    MaxAutoRetries: 1
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
